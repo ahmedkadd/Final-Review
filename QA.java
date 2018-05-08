@@ -1,15 +1,19 @@
+package com.example.simanste.javareviewapp;
+
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class QA {
 
     private String question;
     private String answer;
-    private ArrayList<String> choices = new ArrayList<String>();
+    public ArrayList<String> choices;
 
-    public QA(String q, String a, ArrayList<String> choices) {
+    public QA(String q, ArrayList<String> c) {
         this.question=q;
-        this.answer=a;
-        this.choices=choices;
+        this.choices = c;
+        this.answer=choices.get(0);
+        Collections.shuffle(choices);
     }
 
     public String getQuestion() { return this.question; }
