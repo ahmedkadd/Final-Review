@@ -1,27 +1,22 @@
-// QA is the super class for all Question and Answer objects. It contains the data members
-// question and answer, a displayQuestion method which just displays the question, and a checkAnswer method.
+import java.util.ArrayList;
+
 public class QA {
 
-    protected String question;
-    protected String answer;
+    private String question;
+    private String answer;
+    private ArrayList<String> choices = new ArrayList<String>();
 
-    public QA(String q, String a) {
-        this.question = q;
-        this.answer = a;
+    public QA(String q, String a, ArrayList<String> choices) {
+        this.question=q;
+        this.answer=a;
+        this.choices=choices;
     }
 
-    public void displayQuestion() {
-        System.out.println(question);
-    }
+    public String getQuestion() { return this.question; }
+
+    public String getAnswer() { return this.answer; }
 
     public boolean checkAnswer (String userAnswer) {
         return this.answer.equals(userAnswer);
     }
-
-    public void displayAnswer() {
-        System.out.println("The correct answer is: "+ answer);
-
-    }
-
-
 }
