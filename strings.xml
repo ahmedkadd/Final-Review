@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">JavaReviewApp</string>
+    <string name="button1">Beneath the Hood</string>
+    <string name="button2">Concepts and Terminology</string>
+    <string name="button3">Data Structures and Algorithms</string>
+    <string name="button4">Software Engineering</string>
+    <string name="label"> </string>
+    <string name="radio_button"> </string>
+    <string name="answer_submit_button">Submit</string>
+</resources>
